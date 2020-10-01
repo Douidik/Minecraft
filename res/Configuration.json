@@ -1,0 +1,43 @@
+{
+     "Camera": {
+          "FieldOfView": 75,
+          "zFar": 1000.0,
+          "zNear": 0.1
+     },
+     "Chunk": {
+          "CachedDistance": 2,
+          "Generation": {
+               "PerlinFactor": 10,
+               "PerlinOffset": 10
+          },
+          "RenderDistance": 8,
+          "TreeDensity": 10
+     },
+     "Controls": {
+          "BackwardKey": 83,
+          "CrouchKey": 340,
+          "Debug": {
+               "ShowFpsKey": 299,
+               "ToggleWireframeKey": 298
+          },
+          "ForwardKey": 87,
+          "JumpKey": 32,
+          "LeftKey": 65,
+          "RightKey": 68,
+          "Sensitivity": 75.0,
+          "Speed": 35
+     },
+     "Renderer": {
+          "MSAA": 0,
+          "VSync": false
+     },
+     "UniformName": {
+          "Transform": "u_Transform",
+          "ViewProjection": "u_ViewProjection"
+     },
+     "Window": {
+          "Height": 761,
+          "Name": "Minecraft",
+          "Width": 1440
+     }
+}

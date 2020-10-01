@@ -1,0 +1,41 @@
+#ifndef MINECRAFT_MC_PCH
+#define MINECRAFT_MC_PCH
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
+#include <nlohmann/json.hpp>
+#include <glm/gtc/noise.hpp>
+
+/* Perlin noise library, not the implementation */
+#include<PerlinNoise.hpp>
+
+#include <iostream>
+#include <vector>
+#include <list>
+#include <forward_list>
+#include <map>
+#include <fstream>
+#include <stack>
+#include <algorithm>
+#include <random>
+#include <functional>
+#include <thread>
+#include <future>
+#include <deque>
+
+
+#include "core/Base.h"
+#include "core/Logger.h"
+
+#include "events/KeyCodes.h"
+#include "events/MouseButtons.h"
+
+#include "debug/GLDebug.h"
+
+#endif //MINECRAFT_MC_PCH
