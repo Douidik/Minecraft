@@ -1,5 +1,7 @@
 # 👇 About minecraft
-Voxel renderer / World generator written in a week using C++ and OpenGL.
+Minecraft like voxel renderer / world generator written in a week using C++ and OpenGL.
+
+![screenrecord](screenrecord.gif)
 
 # Getting started
 ```shell
