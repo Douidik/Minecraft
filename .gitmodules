@@ -1,3 +1,6 @@
 [submodule "vendor/stb"]
 	path = vendor/stb
 	url = https://github.com/nothings/stb.git
+[submodule "vendor/PerlinNoise"]
+	path = vendor/PerlinNoise
+	url = https://github.com/Reputeless/PerlinNoise

@@ -50,15 +50,10 @@ namespace fs = std::filesystem;
 #endif
 
 /* Asserting and error */
-#if defined(MC_DEBUG)
-	#define MC_ASSERT(x, ...) if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); MC_DEBUGBREAK(); }
-	#define MC_ASSERT_WARN(x, ...)  if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); }
-	#define MC_ASSERT_ERROR(x, ...) if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); }
-	#define MC_ERROR(...) MC_LOG_ERROR(__VA_ARGS__); MC_DEBUGBREAK()
-#else
-	#define MC_ASSERT(x, ...)
-	#define MC_ERROR(...)
-#endif
+#define MC_ASSERT(x, ...) if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); MC_DEBUGBREAK(); }
+#define MC_ASSERT_WARN(x, ...)  if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); }
+#define MC_ASSERT_ERROR(x, ...) if(!static_cast<bool>(x)) { MC_LOG_ERROR(__VA_ARGS__); }
+#define MC_ERROR(...) MC_LOG_ERROR(__VA_ARGS__); MC_DEBUGBREAK()
 
 /*
  * Defining Types

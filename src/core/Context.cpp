@@ -39,8 +39,6 @@ void Context::OpenWindow()
 
 	// Enabling msaa
 	glfwWindowHint(GLFW_SAMPLES, m_WindowConfig.msaa);
-	// Enabling vsync
-	glfwWindowHint(GLFW_DOUBLEBUFFER, m_WindowConfig.vSync);
 
 	/* Opening the window */
 	m_pGlfwWindow = glfwCreateWindow(m_WindowConfig.width,
